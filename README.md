@@ -1,9 +1,14 @@
 # flask-samsung
 A Flask based API to control your samsung TV (2012/2013 series)
 
-The REST API depends on python-requests so: `pip install requests`
+##Setup
 
-You can setup your channels by editing the file `channels.json`
+The REST API depends on python-requests so run: `pip install requests` to install the module
+
+##Configuration
+It is important that the API knows how to translate channel names into button presses. You can setup your channels by editing the file `channels.json` identifying your TV channels and the respective position on the EPG.
+
+You need also to define the IP address of the Television and the IP address of the device running the API. Both variables are defined in the begginning of `samsung.py` python file.
 
 ##Usage example - API endpoints:
 
